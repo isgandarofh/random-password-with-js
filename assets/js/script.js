@@ -77,17 +77,16 @@ function generate() {
   ];
 
   const simvol = ["*", "#", "$", "&", "-", "?", "/", "|"];
+  const nums = ["1","2","3","4","5","6","7","8","9","0"];
 
-  let passSim = smallAlpha.concat(largeAlpha, simvol);
+  let passSim = smallAlpha.concat(largeAlpha, simvol,nums);
   for (let x = 1; x <= inpValue; x++) {
     let rdmNum = String(Math.round(Math.random() * (passSim.length - 1)));
     rdmNums = rdmNums + rdmNum + ",";
   }
 
   let rdmNumsSplit = rdmNums.split(",");
-  rdmNumsSplit.pop();
-  console.log(rdmNumsSplit);
-  
+  rdmNumsSplit.pop();  
   endAnswer= ""
   rdmNumsSplit.forEach((ind) => {
 
