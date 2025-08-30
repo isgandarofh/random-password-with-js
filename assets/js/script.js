@@ -88,13 +88,13 @@ function generate() {
   rdmNumsSplit.pop();
   console.log(rdmNumsSplit);
   
-  bbb= ""
+  endAnswer= ""
   rdmNumsSplit.forEach((ind) => {
 
-    bbb += passSim[ind]
+    endAnswer += passSim[ind]
 
   });
-  document.getElementById("passShow").innerHTML = bbb
+  document.getElementById("passShow").innerHTML = endAnswer
   
 }
 
